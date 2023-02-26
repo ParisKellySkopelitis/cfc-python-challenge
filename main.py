@@ -64,5 +64,6 @@ if privacy_tag is not None:
                     except:
                         frequency_count[word] = 1
 
+# Save results to json file
 with open('frequency.json', 'w') as f:
     json.dump(frequency_count, f)
